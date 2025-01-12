@@ -1,4 +1,4 @@
-import { iconNames, SwIcon } from "@/ui/link/SwIcon";
+import { iconNames, SwIcon } from "@/ui/icon/SwIcon";
 import { ClickNumberPhone } from "@/components/click-number-phone/ClickNumberPhone";
 
 export function NavigationExtras() {

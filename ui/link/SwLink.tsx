@@ -11,7 +11,7 @@ export function SwLink({ href = "/", className, children }: SwLinkProps) {
   return (
     <Link
       href={href}
-      className={cn("cursor-pointer hover:underline", className)}
+      className={cn("cursor-pointer hover:underline text-grey", className)}
     >
       {children}
     </Link>

@@ -1,4 +1,4 @@
-import { iconNames, SwIcon } from "@/ui/link/SwIcon";
+import { iconNames, SwIcon } from "@/ui/icon/SwIcon";
 import { cn } from "@/lib/utils";
 import { phoneNumber, phoneNumberText } from "./click-number-phone-constants";
 

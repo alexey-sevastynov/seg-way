@@ -1,5 +1,5 @@
 import { SwLink } from "@/ui/link/SwLink";
-import { navigationItems } from "./header-navigation-constants";
+import { navigationItems } from "../header-navigation-constants";
 
 export function ListNavigation() {
   return (
