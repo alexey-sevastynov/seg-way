@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  basePath: "/sag-way",
+  assetPrefix: "/sag-way",
+  output: "export",
 };
 
 export default nextConfig;
