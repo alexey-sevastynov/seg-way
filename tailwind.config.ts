@@ -8,9 +8,23 @@ export default {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+        },
+        screens: {
+          "2xl": "1376px",
+        },
+      },
+
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        white: "var(--white)",
+        grey: "var(--grey)",
+      },
+
+      maxWidth: {
+        "2xl": "1376px",
       },
     },
   },

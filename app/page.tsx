@@ -1,18 +1,15 @@
-import Image from "next/image";
-import img from "@/assets/images/next.svg";
+import { HeaderNavigation } from "@/components/header-navigation/HeaderNavigation";
+import { HeaderNavigationMobile } from "@/components/header-navigation/HeaderNavigationMobile";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <Image
-        className="dark:invert"
-        src={img}
-        alt="Next.js logo"
-        width={180}
-        height={38}
-        priority
-      />
-      <p>Starting project with the Next.js</p>
+    <div className="w-full">
+      <div className="bg-grey h-12 flex items-center max-md:bg-white">
+        <div className="container">
+          <HeaderNavigation />
+          <HeaderNavigationMobile />
+        </div>
+      </div>
     </div>
   );
 }
