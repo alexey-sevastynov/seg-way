@@ -6,13 +6,13 @@ export function NavigationExtras() {
     <ul className="flex gap-6">
       <li>
         <SwIcon
-          name={iconNames.cartWhite}
+          name={iconNames.instagram}
           className="cursor-pointer"
         />
       </li>
       <li>
         <SwIcon
-          name={iconNames.instagramWhite}
+          name={iconNames.instagram}
           className="cursor-pointer"
         />
       </li>

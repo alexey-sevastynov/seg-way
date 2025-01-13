@@ -16,7 +16,7 @@ export function ClickNumberPhone({
       href={"tel:" + phoneNumber}
       className={cn("text-white hover:underline", className)}
     >
-      {isIconLink ? <SwIcon name={iconNames.phoneBlack} /> : phoneNumberText}
+      {isIconLink ? <SwIcon name={iconNames.instagram} /> : phoneNumberText}
     </a>
   );
 }

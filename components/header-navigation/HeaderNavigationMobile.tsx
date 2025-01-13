@@ -14,20 +14,17 @@ export function HeaderNavigationMobile() {
         </button>
       </div>
 
-      <SwIcon
-        name={iconNames.logoBlack}
-        size={94}
-      />
+      <SwIcon name={iconNames.instagram} />
 
       <ul className="flex gap-4">
         <li>
           <Link href={routes.cart}>
-            <SwIcon name={iconNames.cartBlack} />
+            <SwIcon name={iconNames.instagram} />
           </Link>
         </li>
         <li>
           <Link href={routes.instagram}>
-            <SwIcon name={iconNames.instagramBlack} />
+            <SwIcon name={iconNames.instagram} />
           </Link>
         </li>
         <li>
