@@ -1,8 +1,10 @@
 import { cn } from "@/lib/utils";
 import { FaInstagram } from "react-icons/fa";
+import { BsCart3, BsTelephone } from "react-icons/bs";
 import { IconBaseProps } from "react-icons";
 import { RefAttributes } from "react";
 import { colors } from "@/constants/colors";
+import { IconName, iconSizes } from "./icon-const";
 
 interface SwIconProps {
   name: string;
@@ -13,23 +15,19 @@ interface SwIconProps {
   className?: string;
 }
 
-export const iconNames = {
-  instagram: "instagram",
-};
-
-export type IconName = (typeof iconNames)[keyof typeof iconNames];
-
 const iconMap: Record<
   IconName,
   React.ComponentType<IconBaseProps & RefAttributes<SVGSVGElement>>
 > = {
   instagram: FaInstagram,
+  cart: BsCart3,
+  phone: BsTelephone,
 };
 
 export function SwIcon({
   name,
   color = colors.grey,
-  size = 24,
+  size = iconSizes.medium,
   className,
 }: SwIconProps) {
   if (name in iconMap) {
