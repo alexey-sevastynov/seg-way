@@ -1,4 +1,5 @@
-import { iconNames, SwIcon } from "@/ui/icon/SwIcon";
+import { SwIcon } from "@/ui/icon/SwIcon";
+import { iconNames } from "@/ui/icon/icon-const";
 import { cn } from "@/lib/utils";
 import { phoneNumber, phoneNumberText } from "./click-number-phone-constants";
 
@@ -16,7 +17,7 @@ export function ClickNumberPhone({
       href={"tel:" + phoneNumber}
       className={cn("text-white hover:underline", className)}
     >
-      {isIconLink ? <SwIcon name={iconNames.phoneBlack} /> : phoneNumberText}
+      {isIconLink ? <SwIcon name={iconNames.phone} /> : phoneNumberText}
     </a>
   );
 }

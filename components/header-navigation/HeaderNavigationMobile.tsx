@@ -1,7 +1,10 @@
 import Link from "next/link";
-import { iconNames, SwIcon } from "@/ui/icon/SwIcon";
+import { SwIcon } from "@/ui/icon/SwIcon";
+
 import { ClickNumberPhone } from "@/components/click-number-phone/ClickNumberPhone";
 import { routes } from "@/constants/routes";
+import { iconNames } from "@/ui/icon/icon-const";
+import { Logo } from "@/components/logo/logo";
 
 export function HeaderNavigationMobile() {
   return (
@@ -14,24 +17,21 @@ export function HeaderNavigationMobile() {
         </button>
       </div>
 
-      <SwIcon
-        name={iconNames.logoBlack}
-        size={94}
-      />
+      <Logo />
 
       <ul className="flex gap-4">
         <li>
-          <Link href={routes.cart}>
-            <SwIcon name={iconNames.cartBlack} />
-          </Link>
+          <ClickNumberPhone isIconLink />
         </li>
         <li>
           <Link href={routes.instagram}>
-            <SwIcon name={iconNames.instagramBlack} />
+            <SwIcon name={iconNames.instagram} />
           </Link>
         </li>
         <li>
-          <ClickNumberPhone isIconLink />
+          <Link href={routes.cart}>
+            <SwIcon name={iconNames.cart} />
+          </Link>
         </li>
       </ul>
     </nav>
