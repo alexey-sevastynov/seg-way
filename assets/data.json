@@ -15,11 +15,11 @@
     "suspension": "None",
     "safety": "Rear LED light",
     "priceUSD": 453.7,
-    "image": "URL_placeholder"
+    "image": "/seg-way/images/E22.png"
   },
   {
     "id": "b69a3a62-6591-4b09-b125-3341347a5c64",
-    "model": "Ninebot KickScooter E51L",
+    "model": "Ninebot KickScooter ES1L",
     "maxSpeed": 20,
     "maxDistance": 20,
     "batteryCapacity": 184,
@@ -33,7 +33,7 @@
     "suspension": "Front",
     "safety": "Rear LED light",
     "priceUSD": 453.7,
-    "image": "URL_placeholder"
+    "image": "/seg-way/images/ES1L.png"
   },
   {
     "id": "e07b2c81-85f6-4f16-9676-6f410db67410",
@@ -51,7 +51,7 @@
     "suspension": "None",
     "safety": "Rear LED light",
     "priceUSD": 453.7,
-    "image": "URL_placeholder"
+    "image": "/seg-way/images/T15.png"
   },
   {
     "id": "c496678d-2650-4383-aab8-96e432cf6f85",
@@ -69,7 +69,7 @@
     "suspension": "None",
     "safety": "Rear LED light",
     "priceUSD": 453.7,
-    "image": "URL_placeholder"
+    "image": "/seg-way/images/F30.png"
   },
   {
     "id": "ab2a3b4d-3647-4f6e-9f72-fb27c77eab5a",
@@ -87,7 +87,7 @@
     "suspension": "None",
     "safety": "Rear LED light",
     "priceUSD": 453.7,
-    "image": "URL_placeholder"
+    "image": "/seg-way/images/E45.png"
   },
   {
     "id": "2c09f1c1-df2d-4861-b25f-2171c1420ab7",
@@ -105,7 +105,7 @@
     "suspension": "None",
     "safety": "Rear LED light",
     "priceUSD": 453.7,
-    "image": "URL_placeholder"
+    "image": "/seg-way/images/MAX.png"
   },
   {
     "id": "9c28ed64-f34e-4c38-8bdf-b905f73216db",
@@ -123,7 +123,7 @@
     "suspension": "None",
     "safety": "Rear LED light",
     "priceUSD": 453.7,
-    "image": "URL_placeholder"
+    "image": "/seg-way/images/ES2.png"
   },
   {
     "id": "2a58c2e4-b9b9-4705-8911-56e4d017d0d7",
@@ -141,7 +141,7 @@
     "suspension": "None",
     "safety": "LED headlight, side and rear reflectors",
     "priceUSD": 453.7,
-    "image": "URL_placeholder"
+    "image": "/seg-way/images/ES3.png"
   },
   {
     "id": "5f4e7cc8-6c78-4394-8d79-7df55b9e7ef3",
@@ -159,7 +159,7 @@
     "suspension": "None",
     "safety": "Rear LED light",
     "priceUSD": 453.7,
-    "image": "URL_placeholder"
+    "image": "/seg-way/images/ES4.png"
   },
   {
     "id": "2b9138d4-df1b-41a4-9b79-9cb3471f38c8",
@@ -177,6 +177,6 @@
     "suspension": "None",
     "safety": "Rear LED light",
     "priceUSD": 453.7,
-    "image": "URL_placeholder"
+    "image": "/seg-way/images/VMAX.png"
   }
 ]
