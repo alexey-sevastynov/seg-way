@@ -1,10 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/sag-way",
+  basePath: "/seg-way",
   output: "export",
   images: {
-    domains: ["localhost", "alexey-sevastynov.github.io"],
+    domains: [],
     unoptimized: true,
   },
 };
