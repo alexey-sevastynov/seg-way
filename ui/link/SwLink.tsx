@@ -7,7 +7,7 @@ interface SwLinkProps {
   className?: string;
 }
 
-export function SwLink({ href = "/", className, children }: SwLinkProps) {
+export function SwLink({ href = "#", className, children }: SwLinkProps) {
   return (
     <Link
       href={href}
