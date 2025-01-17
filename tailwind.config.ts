@@ -21,10 +21,15 @@ export default {
       colors: {
         white: "var(--white)",
         grey: "var(--grey)",
+        blue: "var(--blue)",
       },
 
       maxWidth: {
         "2xl": "1376px",
+      },
+
+      fontSize: {
+        xs: ["0.75rem", { lineHeight: "16px" }],
       },
     },
   },

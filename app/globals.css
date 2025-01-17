@@ -5,12 +5,14 @@
 :root {
   --white: #ffffff;
   --grey: #323941;
+  --blue: #009eff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --white: #ffffff;
     --grey: #323941;
+    --blue: #009eff;
   }
 }
 
@@ -18,4 +20,8 @@ body {
   color: var(--grey);
   background: var(--white);
   font-family: var(--font-poppins);
+}
+
+link {
+  line-height: 1;
 }

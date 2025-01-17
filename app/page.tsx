@@ -1,5 +1,6 @@
 import { HeaderNavigation } from "@/components/header-navigation/HeaderNavigation";
 import { HeaderNavigationMobile } from "@/components/header-navigation/HeaderNavigationMobile";
+import { LogoWithContact } from "@/components/logo-with-contact/LogoWithContact";
 
 export default function Home() {
   return (
@@ -9,6 +10,10 @@ export default function Home() {
           <HeaderNavigation />
           <HeaderNavigationMobile />
         </div>
+      </div>
+
+      <div className="container max-md:hidden">
+        <LogoWithContact />
       </div>
     </div>
   );
