@@ -7,33 +7,33 @@ import { iconNames } from "@/ui/icon/icon-const";
 import { Logo } from "@/components/logo/logo";
 
 export function HeaderNavigationMobile() {
-  return (
-    <nav className="flex justify-between gap-6 md:hidden">
-      <div className="relative">
-        <button className="flex flex-col space-y-2 items-center">
-          <span className="block w-6 h-0.5 bg-grey" />
-          <span className="block w-6 h-0.5 bg-grey" />
-          <span className="block w-6 h-0.5 bg-grey" />
-        </button>
-      </div>
+    return (
+        <nav className="flex justify-between gap-6 md:hidden">
+            <div className="relative">
+                <button className="flex flex-col items-center space-y-2">
+                    <span className="block h-0.5 w-6 bg-grey" />
+                    <span className="block h-0.5 w-6 bg-grey" />
+                    <span className="block h-0.5 w-6 bg-grey" />
+                </button>
+            </div>
 
-      <Logo />
+            <Logo />
 
-      <ul className="flex gap-4">
-        <li>
-          <ClickNumberPhone isIconLink />
-        </li>
-        <li>
-          <Link href={routes.instagram}>
-            <SwIcon name={iconNames.instagram} />
-          </Link>
-        </li>
-        <li>
-          <Link href={routes.cart}>
-            <SwIcon name={iconNames.cart} />
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  );
+            <ul className="flex gap-4">
+                <li>
+                    <ClickNumberPhone isIconLink />
+                </li>
+                <li>
+                    <Link href={routes.instagram}>
+                        <SwIcon name={iconNames.instagram} />
+                    </Link>
+                </li>
+                <li>
+                    <Link href={routes.cart}>
+                        <SwIcon name={iconNames.cart} />
+                    </Link>
+                </li>
+            </ul>
+        </nav>
+    );
 }

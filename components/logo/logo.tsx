@@ -6,19 +6,14 @@ import { logoSizes } from "./logo-const";
 import { routes } from "@/constants/routes";
 
 interface LogoProps {
-  size?: number;
-  className?: string;
+    size?: number;
+    className?: string;
 }
 
 export function Logo({ size = logoSizes.medium, className }: LogoProps) {
-  return (
-    <Link href={routes.home}>
-      <Image
-        src={logoImage}
-        className={cn("cursor-pointer", className)}
-        alt="Logo"
-        width={size}
-      />
-    </Link>
-  );
+    return (
+        <Link href={routes.home}>
+            <Image src={logoImage} className={cn("cursor-pointer", className)} alt="Logo" width={size} />
+        </Link>
+    );
 }
