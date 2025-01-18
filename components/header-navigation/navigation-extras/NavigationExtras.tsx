@@ -1,5 +1,5 @@
 import { SwIcon } from "@/ui/icon/SwIcon";
-import { ClickNumberPhone } from "@/components/click-number-phone/ClickNumberPhone";
+import { ClickNumberPhone } from "@/components/shared/click-number-phone/ClickNumberPhone";
 import { iconNames } from "@/ui/icon/icon-const";
 import { colors } from "@/constants/colors";
 

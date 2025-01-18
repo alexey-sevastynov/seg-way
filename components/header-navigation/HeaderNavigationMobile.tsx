@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { SwIcon } from "@/ui/icon/SwIcon";
 
-import { ClickNumberPhone } from "@/components/click-number-phone/ClickNumberPhone";
+import { ClickNumberPhone } from "@/components/shared/click-number-phone/ClickNumberPhone";
 import { routes } from "@/constants/routes";
 import { iconNames } from "@/ui/icon/icon-const";
-import { Logo } from "@/components/logo/logo";
+import { Logo } from "@/components/shared/logo/logo";
 
 export function HeaderNavigationMobile() {
     return (
