@@ -1,14 +1,17 @@
 "use client";
 import { useState } from "react";
-import data from "@/assets/data.json";
 import { ProductItem } from "@/components/shared/product-item/ProductItem";
 import { Product } from "@/interfaces/Product";
 
-export function ProductList() {
-    const firstProductId = data[0].id;
+interface ProductListProps {
+    items: Product[];
+}
+
+export function ProductList({ items }: ProductListProps) {
+    const firstProductId = items[0].id;
     const [selectedProduct, setSelectedProduct] = useState<string>(firstProductId);
 
-    return data.map((product: Product) => (
+    return items.map((product: Product) => (
         <ProductItem
             key={product.id}
             image={product.image}
