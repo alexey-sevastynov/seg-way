@@ -1,5 +1,5 @@
-import { Logo } from "@/components/logo/logo";
-import { logoSizes } from "@/components/logo/logo-const";
+import { Logo } from "@/components/shared/logo/logo";
+import { logoSizes } from "@/components/shared/logo/logo-const";
 import { Contact } from "@/components/logo-with-contact/contact/Contact";
 
 export function LogoWithContact() {
