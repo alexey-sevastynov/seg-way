@@ -1,16 +1,14 @@
 "use client";
-import { useState } from "react";
 import { ProductItem } from "@/components/shared/product-item/ProductItem";
 import { Product } from "@/interfaces/Product";
 
 interface ProductListProps {
     items: Product[];
+    selectedProduct: string;
+    onClick?: (product: Product) => void;
 }
 
-export function ProductList({ items }: ProductListProps) {
-    const firstProductId = items[0].id;
-    const [selectedProduct, setSelectedProduct] = useState<string>(firstProductId);
-
+export function ProductList({ items, selectedProduct, onClick }: ProductListProps) {
     return items.map((product: Product) => (
         <ProductItem
             key={product.id}
@@ -20,7 +18,7 @@ export function ProductList({ items }: ProductListProps) {
             model={product.model}
             textColor="text-white"
             isSelected={selectedProduct === product.id}
-            onClick={() => setSelectedProduct(product.id)}
+            onClick={() => onClick?.(product)}
         />
     ));
 }

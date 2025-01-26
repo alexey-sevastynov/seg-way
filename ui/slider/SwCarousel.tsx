@@ -12,6 +12,9 @@ interface SwSliderProps {
     speed?: number;
     infinite?: boolean;
     className?: string;
+    dots?: boolean;
+    selectedProduct?: string;
+    onClick?: (product: Product) => void;
 }
 
 export function SwCarousel({
@@ -21,6 +24,9 @@ export function SwCarousel({
     speed,
     infinite,
     className,
+    dots,
+    selectedProduct,
+    onClick,
 }: SwSliderProps) {
     return (
         <div className={className}>
@@ -30,6 +36,9 @@ export function SwCarousel({
                 slidesToScroll={slidesToScroll}
                 speed={speed}
                 infinite={infinite}
+                dots={dots}
+                selectedProduct={selectedProduct}
+                onClick={onClick}
             />
         </div>
     );

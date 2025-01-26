@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { sizeMap, sizeProductItem, SizeProductItem } from "./product-item-constants";
 
 interface ProductItemProps {
     image: string;
@@ -9,26 +10,44 @@ interface ProductItemProps {
     textColor?: string;
     isSelected?: boolean;
     onClick?: () => void;
+    isNameOnTop?: boolean;
+    size?: SizeProductItem;
 }
 
 export function ProductItem({
     image,
     name,
+    model,
     className,
     textColor = "text-grey",
     isSelected,
     onClick,
+    isNameOnTop = false,
+    size = sizeProductItem.s,
 }: ProductItemProps) {
+    const imageSize = sizeMap[size];
+
     return (
         <div
             className={cn("flex flex-col items-center gap-2 p-2", className, isSelected ? "bg-blue" : "")}
             onClick={onClick}
         >
-            <div className="h-20 w-20">
-                <Image className="h-full w-full object-cover" src={image} alt={name} width={80} height={80} />
+            {isNameOnTop && <p className={cn("text-xl font-semibold", textColor)}>{model}</p>}
+
+            <div
+                style={{ width: `${imageSize.width}px`, height: `${imageSize.height}px` }}
+                className="flex items-center justify-center"
+            >
+                <Image
+                    className="object-cover"
+                    src={image}
+                    alt={name}
+                    width={imageSize.width}
+                    height={imageSize.height}
+                />
             </div>
 
-            <p className={cn("text-sm font-semibold", textColor)}>{name}</p>
+            {!isNameOnTop && <p className={cn("text-sm font-semibold", textColor)}>{name}</p>}
         </div>
     );
 }

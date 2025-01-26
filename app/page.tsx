@@ -17,11 +17,7 @@ export default function Home() {
                 <LogoWithContact />
             </div>
 
-            <div className="flex items-center bg-grey">
-                <div className="container">
-                    <ProductDisplayPanel />
-                </div>
-            </div>
+            <ProductDisplayPanel />
         </div>
     );
 }
