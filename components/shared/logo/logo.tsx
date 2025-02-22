@@ -13,7 +13,12 @@ interface LogoProps {
 export function Logo({ size = logoSizes.medium, className }: LogoProps) {
     return (
         <Link href={routes.home}>
-            <Image src={logoImage} className={cn("cursor-pointer", className)} alt="Logo" width={size} />
+            <Image
+                src={String(logoImage)}
+                className={cn("cursor-pointer", className)}
+                alt="Logo"
+                width={size}
+            />
         </Link>
     );
 }
