@@ -14,7 +14,7 @@ export function ProductList({ items, selectedProduct, onClick }: ProductListProp
             key={product.id}
             image={product.image}
             name={product.name}
-            className="h-36 w-36 cursor-pointer"
+            className="size-36 cursor-pointer"
             model={product.model}
             textColor="text-white"
             isSelected={selectedProduct === product.id}
