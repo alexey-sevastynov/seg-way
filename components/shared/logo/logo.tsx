@@ -14,7 +14,6 @@ export function Logo({ size = logoSizes.medium, className }: LogoProps) {
     return (
         <Link href={routes.home}>
             <Image
-                src={String(logoImage)}
                 src={logoImage as string}
                 className={cn("cursor-pointer", className)}
                 alt="Logo"
