@@ -1,3 +1,4 @@
+import { Baner } from "@/components/baner/baner";
 import { HeaderNavigation } from "@/components/header-navigation/HeaderNavigation";
 import { HeaderNavigationMobile } from "@/components/header-navigation/HeaderNavigationMobile";
 import { LogoWithContact } from "@/components/logo-with-contact/LogoWithContact";
@@ -18,6 +19,7 @@ export default function Home() {
             </div>
 
             <ProductDisplayPanel />
+            <Baner text="Free 1 day shipping within California" />
         </div>
     );
 }
