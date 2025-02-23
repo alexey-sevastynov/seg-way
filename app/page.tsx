@@ -1,4 +1,4 @@
-import { Baner } from "@/components/baner/baner";
+import { Baner } from "@/components/baner/Baner";
 import { HeaderNavigation } from "@/components/header-navigation/HeaderNavigation";
 import { HeaderNavigationMobile } from "@/components/header-navigation/HeaderNavigationMobile";
 import { LogoWithContact } from "@/components/logo-with-contact/LogoWithContact";
