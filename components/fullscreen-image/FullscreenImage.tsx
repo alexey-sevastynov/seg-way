@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import Image, { StaticImageData } from "next/image";
 
 interface FullscreenImageProps {
