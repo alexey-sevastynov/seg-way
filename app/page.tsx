@@ -1,7 +1,9 @@
+import { FullscreenImage } from "@/components/fullscreen-image/FullscreenImage";
 import { HeaderNavigation } from "@/components/header-navigation/HeaderNavigation";
 import { HeaderNavigationMobile } from "@/components/header-navigation/HeaderNavigationMobile";
 import { LogoWithContact } from "@/components/logo-with-contact/LogoWithContact";
 import { ProductDisplayPanel } from "@/components/product-display-panel/ProductDisplayPanel";
+import manWomanSegWayImage from "@/assets/images/man-woman-segway.png";
 
 export default function Home() {
     return (
@@ -18,6 +20,7 @@ export default function Home() {
             </div>
 
             <ProductDisplayPanel />
+            <FullscreenImage src={manWomanSegWayImage} alt="man-woman-segway" />
         </div>
     );
 }
