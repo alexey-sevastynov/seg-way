@@ -32,7 +32,16 @@ export default [
     },
     {
         settings: {
-            tailwindcss: {},
+            tailwindcss: {
+                callees: ["classnames", "clsx", "ctl", "cva", "tv", "cssClass", "cn"],
+                config: "./tailwind.config.ts",
+                cssFiles: ["**/*.css", "!**/node_modules", "!**/.*", "!**/dist", "!**/build"],
+                cssFilesRefreshRate: 5000,
+                removeDuplicates: true,
+                skipClassAttribute: false,
+                tags: [],
+                classRegex: "^class(Name)?$",
+            },
         },
     },
     ...compat
