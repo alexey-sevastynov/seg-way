@@ -3,7 +3,7 @@ import Image from "next/image";
 import { ProductItem } from "@/components/shared/product-item/ProductItem";
 import { Product } from "@/interfaces/Product";
 import { sizeProductItem } from "@/components/shared/product-item/product-item-constants";
-import { carouselBreakpoints } from "./constants";
+import { carouselBreakpoints } from "@/ui/slider/constants";
 import ArrowRight from "@/assets/images/arrow-right.png";
 import ArrowLeft from "@/assets/images/arrow-left.png";
 

@@ -3,10 +3,11 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "next dev --turbopack",
+        "dev": "npm run log-url && next dev --port 3000",
         "build": "next build",
         "start": "next start",
-        "lint": "eslint . --ext .ts,.tsx && echo \"Linting completed successfully!\""
+        "lint": "eslint . --ext .ts,.tsx && echo \"Linting completed successfully!\"",
+        "log-url": "node -e \"console.log('🚀 Dev server running at: \\x1b[36mhttp://localhost:3000/seg-way\\x1b[0m')\""
     },
     "dependencies": {
         "clsx": "^2.1.1",
