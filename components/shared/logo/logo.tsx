@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logoImage from "@/assets/images/logo.svg";
 import { cn } from "@/lib/utils";
-import { logoSizes } from "./logo-const";
+import { logoSizes } from "@/components/shared/logo/logo-const";
 import { routes } from "@/constants/routes";
 
 interface LogoProps {

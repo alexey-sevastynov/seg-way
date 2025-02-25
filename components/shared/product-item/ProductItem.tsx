@@ -1,6 +1,10 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { sizeMap, sizeProductItem, SizeProductItem } from "./product-item-constants";
+import {
+    sizeMap,
+    sizeProductItem,
+    SizeProductItem,
+} from "@/components/shared/product-item/product-item-constants";
 
 interface ProductItemProps {
     image: string;

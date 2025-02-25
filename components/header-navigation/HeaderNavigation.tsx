@@ -1,5 +1,5 @@
-import { ListNavigation } from "./list-navigation/ListNavigation";
-import { NavigationExtras } from "./navigation-extras/NavigationExtras";
+import { ListNavigation } from "@/components/header-navigation/list-navigation/ListNavigation";
+import { NavigationExtras } from "@/components/header-navigation/navigation-extras/NavigationExtras";
 
 export function HeaderNavigation() {
     return (
