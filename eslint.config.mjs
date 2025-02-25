@@ -32,7 +32,16 @@ export default [
     },
     {
         settings: {
-            tailwindcss: {},
+            tailwindcss: {
+                callees: ["classnames", "clsx", "ctl", "cva", "tv", "cssClass", "cn"],
+                config: "./tailwind.config.ts",
+                cssFiles: ["**/*.css", "!**/node_modules", "!**/.*", "!**/dist", "!**/build"],
+                cssFilesRefreshRate: 5000,
+                removeDuplicates: true,
+                skipClassAttribute: false,
+                tags: [],
+                classRegex: "^class(Name)?$",
+            },
         },
     },
     ...compat
@@ -91,7 +100,10 @@ export default [
             eqeqeq: ["error", "always"],
             "space-in-parens": ["error", "never"],
             "default-case": "error",
-            "max-len": ["error", { code: 120, ignorePattern: "^import\\s.+\\sfrom\\s.+;$" }],
+            "max-len": [
+                "error",
+                { code: 120, ignorePattern: '^import\\s.+\\sfrom\\s.+;$|className="[^"]+"' },
+            ],
             "@typescript-eslint/no-unsafe-return": "error",
             "@typescript-eslint/no-unsafe-assignment": "error",
             "@typescript-eslint/no-unused-vars": "off",
