@@ -1,6 +1,6 @@
 "use client";
 import { SwCarousel } from "@/ui/slider/SwCarousel";
-import { ProductList } from "./product-list/ProductList";
+import { ProductList } from "@/components/product-display-panel/product-list/ProductList";
 import data from "@/assets/data.json";
 import { useState } from "react";
 import { Product } from "@/interfaces/Product";
