@@ -4,6 +4,7 @@ import { HeaderNavigationMobile } from "@/components/header-navigation/HeaderNav
 import { LogoWithContact } from "@/components/logo-with-contact/LogoWithContact";
 import { ProductDisplayPanel } from "@/components/product-display-panel/ProductDisplayPanel";
 import manWomanSegWayImage from "@/assets/images/man-woman-segway.png";
+import { Advantages } from "@/components/advantages/Advantages";
 
 export default function Home() {
     return (
@@ -20,6 +21,9 @@ export default function Home() {
             </div>
 
             <ProductDisplayPanel />
+            <div className="container">
+                <Advantages />
+            </div>
             <FullscreenImage src={manWomanSegWayImage} alt="man-woman-segway" />
         </div>
     );
