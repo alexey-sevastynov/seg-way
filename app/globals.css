@@ -6,6 +6,8 @@
     --white: #ffffff;
     --grey: #323941;
     --blue: #009eff;
+    --blue-hover: #008ce3;
+    --blue-active: #0281d0;
     --light-grey: #99999914;
 }
 
@@ -14,6 +16,8 @@
         --white: #ffffff;
         --grey: #323941;
         --blue: #009eff;
+        --blue-hover: #008ce3;
+        --blue-active: #0281d0;
         --light-grey: #99999914;
     }
 }
