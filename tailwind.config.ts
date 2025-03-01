@@ -5,6 +5,7 @@ export default {
         "./pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
+        "./ui/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
         extend: {
@@ -22,6 +23,8 @@ export default {
                 white: "var(--white)",
                 grey: "var(--grey)",
                 blue: "var(--blue)",
+                "blue-active": "var(--blue-active)",
+                "blue-hover": "var(--blue-hover)",
                 "light-grey": "var(--light-grey)",
             },
 
