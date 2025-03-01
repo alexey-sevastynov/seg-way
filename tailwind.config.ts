@@ -22,6 +22,7 @@ export default {
                 white: "var(--white)",
                 grey: "var(--grey)",
                 blue: "var(--blue)",
+                "light-grey": "var(--light-grey)",
             },
 
             maxWidth: {

@@ -106,7 +106,10 @@ export default [
             ],
             "@typescript-eslint/no-unsafe-return": "error",
             "@typescript-eslint/no-unsafe-assignment": "error",
-            "@typescript-eslint/no-unused-vars": "off",
+            "@typescript-eslint/no-unused-vars": [
+                "warn",
+                { vars: "all", args: "after-used", ignoreRestSiblings: false },
+            ],
             "@typescript-eslint/array-type": [
                 "error",
                 {

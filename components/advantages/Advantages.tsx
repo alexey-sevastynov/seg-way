@@ -1,29 +1,16 @@
 "use client";
 import { useState } from "react";
-import { advantagesData } from "@/components/advantages/advantages-constants";
-import { AdvantageButton } from "@/components/advantages/advantage/AdvantageButton";
+import { AdvantagesNavigation } from "@/components/advantages/advantages-navigation/AdvantagesNavigation";
+import { AdvantageCard } from "@/components/advantages/advantage-card/AdvantageCard";
+import { advantageButton, AdvantageButtons } from "@/components/advantages/advantages-constants";
 
 export function Advantages() {
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeButton, setActiveButton] = useState<AdvantageButtons>(advantageButton.security);
 
     return (
-        <div className="rounded-2xl bg-white shadow-lg">
-            <div className="flex justify-between border-b">
-                {advantagesData.map((item, index) => (
-                    <AdvantageButton
-                        key={index}
-                        label={item.title}
-                        icon={item.icon}
-                        index={index}
-                        activeIndex={activeIndex}
-                        setActiveIndex={setActiveIndex}
-                    />
-                ))}
-            </div>
-            <div key={activeIndex} className="text-center">
-                <h3 className="mb-2 text-lg font-semibold">{advantagesData[activeIndex].title}</h3>
-                <p className="text-gray-600">{advantagesData[activeIndex].description}</p>
-            </div>
+        <div className="flex flex-col max-lg:flex-col-reverse">
+            <AdvantagesNavigation activeButton={activeButton} setActiveButton={setActiveButton} />
+            <AdvantageCard activeButton={activeButton} />
         </div>
     );
 }
